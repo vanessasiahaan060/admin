@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/logo.png">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <title>
+        Sistem Informasi Del
+    </title>
+
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="admin.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="bg-custom position-absolute w-300">
+    </div>
+    <aside
+        class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 "
+        id="sidenav-main">
+        <div class="sidenav-header">
+            <a class="navbar-brand" href="dashboard.html " target="_blank">
+                <img src="img/logo.png" class="navbar-brand-img h-100" alt="main_logo">
+                <span class="ms-2 font-weight-bold ">Institut Teknologi DEL</span>
+            </a>
+        </div>
+
+        <hr class="horizontal dark mt-2">
+        <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link action" href="Dashboard.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        </div>
+                        <i class="uil uil-estate"></i>
+                        <span class="nav-link-text ms-2 font-weight-bold">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="Pengumuman.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        </div>
+                        <i class="uil uil-megaphone"></i>
+                        <span class="nav-link-text ms-1">Pengumuman</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="Program.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        </div>
+                        <i class="uil uil-graph-bar"></i>
+                        <span class="nav-link-text ms-1">Program</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="Lembaga.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        </div>
+                        <i class="uil uil-university"></i>
+                        <span class="nav-link-text ms-1">Lembaga</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="fasilitas.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        </div>
+                        <i class="uil uil-book"></i>
+                        <span class="nav-link-text ms-1">Fasilitas</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="Kategori.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        </div>
+                        <i class="uil uil-create-dashboard"></i>
+                        <span class="nav-link-text ms-1">Kategori</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="Logout.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        </div>
+                        <i class="uil uil-signout"></i>
+                        <span class="nav-link-text ms-1">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        </div>
+    </aside>
+
+    <main class="main-content position-relative border-radius-lg ">
+        <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur"
+            data-scroll="false">
+            <div class="container-fluid py-1 px-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+                        <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white"
+                                href="javascript:;">Pages</a></li>
+                        <li class="breadcrumb-item text-sm text-white active" aria-current="page">Pengumuman</li>
+                    </ol>
+                    <h6 class="font-weight-bolder text-white mb-0">Pengumuman</h6>
+                </nav>
+
+                <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+                    <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                        <div class="input-group">
+                            <span class="input-group-text text-body">
+                                <i class="uil uil-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Type here...">
+                        </div>
+                    </div>
+
+                    <ul class="ikons navbar-nav  justify-content-end">
+                        <li class=" nav-item d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-white font-weight-bold px-0">
+                                <i class="fa fa-user me-sm-1"></i>
+                                <span class="d-sm-inline d-none">profile</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
+                                <div class="sidenav-toggler-inner">
+                                    <i class="sidenav-toggler-line bg-white"></i>
+                                    <i class="sidenav-toggler-line bg-white"></i>
+                                    <i class="sidenav-toggler-line bg-white"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item px-3 d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-white p-0">
+                                <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown pe-2 d-flex align-items-center">
+                            <a href="javascript:;" class="nav-link text-white p-0" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-bell cursor-pointer"></i>
+                            </a>
+                            <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4"
+                                aria-labelledby="dropdownMenuButton">
+                                <li class="mb-2">
+                                    <a class="dropdown-item border-radius-md" href="javascript:;">
+                                        <div class="d-flex py-1">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                    </ul>
+                </div>
+                </a>
+                </li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <tbody>
+            <div class="col-md-25 p- pt-11">
+                <div class="container-fluid">
+                    <div class="card1">
+                        <div class="card1-body">
+                            <h1 class="card1-title Judul">Form Masukkan Data Pengumuman</h1>
+                            <form action="#" class="form">
+                                <br>
+
+                                <div class="form-group">
+                                    <label for="Judul">Judul</label>
+                                    <input type="text" id="Judul" name="Judul" class="form-control"
+                                        placeholder="Masukkan Judul Penguman">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="Nama">Username</label>
+                                    <input type="text" id="Nama" name="Nama" class="form-control"
+                                        placeholder="Username">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="Tanggal">Tanggal</label>
+                                    <input type="date" id="Tanggal" name="Tanggal" class="form-control" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="isi">Isi</label>
+                                    <textarea id="isi" name="isi" class="form-control"
+                                        placeholder="Masukkan Isi Pengumuman"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="Gambar">Gambar:</label>
+                                    <input type="file" id="Gambar" name="gambar" class="form-control-file"
+                                        accept="image/*">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <input type="submit" name="submit" value="+Add" class="custom-button" />
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <table class="table table-striped table-hover" id=" myTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                Select All <input type="checkbox" id="selectAllCheckbox">
+                            </th>
+                            <th scope="col">No</th>
+                            <th scope="col">Judul</th>
+                            <th scope="col">Username</th>
+                            <th scope="col">Tanggal</th>
+                            <th scope="col">Isi</th>
+                            <th scope="col">Gambar</th>
+                            <th scope="col">Aksi</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th><input type="checkbox" id="selectAllCheckbox"></th>
+                            <th scope="row">1</th>
+                            <td> Job Fair Institut Teknologi Del di Pekan Raya Sumatera Utara (PRSU) 2023
+                            </td>
+                            <td>PRSU</td>
+                            <td> July 4th '23</td>
+                            <td>
+                                <p>
+                                    Dinas Ketenagakerjaan Provinsi Sumatera Utara kini bekerja sama dengan beberapa
+                                    perusahaan dan institut yang menyediakan lowongan pekerjaan. Salah satunya adalah
+                                    Institut Teknologi Del. Melalui acara JOB FAIR 2023 ini akan menjadi kesempatan baik
+                                    untuk Anda bertemu dengan kami dari Institut Teknologi Del yang menyediakan berbagai
+                                    peluang kerja.
+                                </p>
+                            </td>
+                            <td>
+                                <img src="img/Job del.jpeg" alt="Gambar Pengumuman 1" class="img-fluid">
+                            </td>
+                            <td>
+                                <a href="view.html"><button class="custom-button-primary-btn">Edit</button></a>
+                                <a href="edit.html"><button class="custom-outline-primary-btn">Delete</button></a>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <th><input type="checkbox" id="selectAllCheckbox"></th>
+                            <th scope="row">2</th>
+                            <td>Informasi PMB Jalur Sertifikat Ujian Tulis Berbasis Komputer (Sertifikat UTBK) 2023/2024
+                                & Jadwal Pelaksanaan Kegiatan
+                            </td>
+                            <td>PRSU</td>
+                            <td> July 15th '23</td>
+                            <td>
+                                <p>
+                                    Sertifikat UTBK adalah salah satu jalur penerimaan mahasiswa baru yang
+                                    diselenggarakan oleh Institut Teknologi Del (IT Del), melalui sertifikat UTBK yang
+                                    diselenggarakan oleh Lembaga Tes Masuk Perguruan Tinggi Negeri (LTMPT). Pendaftaran
+                                    sebagai peserta Seleksi Program Sertifikat UTBK IT Del dilakukan secara daring
+                                    dengan membuka laman http://spmbapp.del.ac.id dan mengisi/melengkapi formulir isian
+                                    yang tersedia sesuai dengan petunjuk.
+                                </p>
+                            </td>
+                            <td>
+                                <img src="img/utbk del.png" alt="Gambar Pengumuman 1" class="img-fluid">
+                            </td>
+                            <td>
+                                <a href="view.html"><button class="custom-button-primary-btn">Edit</button></a>
+                                <a href="edit.html"><button class="custom-outline-primary-btn">Delete</button></a>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <th><input type="checkbox" id="selectAllCheckbox"></th>
+                            <th scope="row">3</th>
+                            <td>Job Fair Institut Teknologi Del di Pekan Raya Sumatera Utara (PRSU) 2023
+                            </td>
+                            <td>IEEE</td>
+                            <td> July 4th '23</td>
+                            <td>
+                                <p>
+                                    Institut Teknologi Del berperan sebagai host dalam International Conference on
+                                    Telecommunications (ICT) untuk edisi yang ke-29. ICT merupakan konferensi yang
+                                    berfokus pada kemajuan dan penelitian terkini dalam bidang telekomunikasi.
+                                    Konferensi ini berlangsung pada tanggal 8-9 November 2023 berlokasi di Toba,
+                                    Indonesia. Sedikitnya terdapat 40 paper dari peneliti-peneliti yang berasal dari 6
+                                    negara turut berpartisipasi dalam konferensi ini.
+                                </p>
+                            </td>
+                            <td>
+                                <img src="img/Audit.jpg" alt="Gambar Pengumuman 1" class="img-fluid">
+                            </td>
+                            <td>
+                                <a href="view.html"><button class="custom-button-primary-btn">Edit</button></a>
+                                <a href="edit.html"><button class="custom-outline-primary-btn">Delete</button></a>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <th><input type="checkbox" id="selectAllCheckbox"></th>
+                            <th scope="row">4</th>
+                            <td>Wisuda 398 Lulusan Institut Teknologi Del
+                            </td>
+                            <td>Angkatan 19</td>
+                            <td> Jul 4th '23</td>
+                            <td>
+                                <p>
+                                    Pada Wisuda tahun ini terdapat sebanyak 398 wisudawan dan wisudawati yang terdiri
+                                    dari 51 mahasiswa dari jurusan D3 Teknologi Informasi, 47 mahasiswa dari jurusan D3
+                                    Teknologi Komputer, 64 mahasiswa dari jurusan D4 Teknologi Rekayasa Perangkat Lunak,
+                                    66 mahasiswa dari jurusan S1 Informatika, 71 mahasiswa dari jurusan S1 Sistem
+                                    Informasi, 35 mahasiswa dari jurusan S1 Teknik Elektro, 44 mahasiswa dari jurusan S1
+                                    Manajemen Rekayasa, dan 20 mahasiswa dari jurusan S1 Teknik Bioproses.
+                                </p>
+                            </td>
+                            <td>
+                                <img src="img/wisuda19.jpg" alt="Gambar Pengumuman 1" class="img-fluid">
+                            </td>
+                            <td>
+                                <a href="view.html"><button class="custom-button-primary-btn">Edit</button></a>
+                                <a href="edit.html"><button class="custom-outline-primary-btn">Delete</button></a>
+                            </td>
+                        </tr>
+                    </tbody>
+        </tbody>
+        </tbody>
+        </table>
+        </div>
+        <button id="scrollTopBtn" class="scroll-top-btn">
+            <i class="uil uil-angle-double-up"></i>
+        </button>
+        <div class="product-ratings__list">
+            <div class="page-controller product-ratings__page-controller">
+                <button class="page-icon-button page-icon-button--left">
+                    <svg>
+                        <path
+                            d="m8.5 11c-.1 0-.2 0-.3-.1l-6-5c-.1-.1-.2-.3-.2-.4s.1-.3.2-.4l6-5c .2-.2.5-.1.7.1s.1.5-.1.7l-5.5 4.6 5.5 4.6c.2.2.2.5.1.7-.1.1-.3.2-.4.2z">
+                        </path>
+                    </svg>
+                </button>
+                <button class="page-button-solid page-button-solid--primary">1</button>
+                <button class="page-button-no-outline">2</button>
+                <button class="page-button-no-outline">3</button>
+                <button class="page-button-no-outline">...</button>
+                <button class="page-icon-button page-icon-button--right">
+                    <svg>
+                        <path
+                            d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="container-fluid ml-4 style: 18rem">
+            <div class="footer-in">
+                <p class="mb-0"> &copy 2023 VKDesign .All Rights Reserved </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
